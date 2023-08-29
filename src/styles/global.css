@@ -1,9 +1,10 @@
 html {
-    background-color: #f1f5f9;
+    background-color: #221D33;
     font-family: sans-serif;
 }
 
 body {
+    color: white;
     margin: 0 auto;
     width: 100%;
     max-width: 80ch;
