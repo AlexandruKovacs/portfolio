@@ -1,20 +1,9 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pageTitle = "Inicio | Alexandru Kovacs";
-const pageDescription = "Inicio";
+const pageDescription = 'Inicio';
 ---
 
-<html lang="en">
-  <head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mí</a>
-    <a href="/blog/">Blog</a>
-	  <h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
+</BaseLayout>

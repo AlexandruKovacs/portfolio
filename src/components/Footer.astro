@@ -1,0 +1,31 @@
+---
+const media = {
+    name: "Alexandru Kovacs",
+    github: "AlexandruKovacs",
+    linkedin: "alexandru-kovacs",
+    email: "alexkovasc0045@gmail.com",
+    phone: "654047518",
+}
+
+import Social from './Social.astro';
+---
+
+<style>
+    footer {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+</style>
+
+<footer>
+    <Social platform="twitter" username="AlkoGaminG" />
+    <Social platform="github" username="AlexandruKovacs" />
+    <Social platform="linkedin" username="alexandru-kovacs" />
+</footer>
+
+<style lang="css">
+    [astro-icon="github"] {
+        width: 1.5rem;
+    }
+</style>
