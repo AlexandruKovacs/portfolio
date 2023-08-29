@@ -1,25 +1,29 @@
 ---
-import Layout from "../layouts/Layout.astro";
+const pageTitle = "Blog | Alexandru Kovacs";
+const pageDescription = "Blog";
 ---
 
-<Layout title="Portfolio | Alexandru Kovacs">
-	<a href="/">Inicio</a>
-	<a href="/about/">Sobre mi</a>
-	<a href="/blog/">Blog</a>
-    <main>
-        <h1>Mi blog de Astro aprendizaje</h1>
-        <p>Aquí es donde voy a postear sobre mi viaje de aprendizaje Astro.</p>
-    </main>
-</Layout>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Inicio</a>
+    <a href="/about/">Sobre mí</a>
+    <a href="/blog/">Blog</a>
 
-<style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-</style>
+    <h1>Mi blog de Astro aprendizaje</h1>
+    <p>Aquí es donde voy a postear sobre mi viaje de aprendizaje Astro.</p>
+
+    <ul>
+      <li><a href="/posts/post-1/">Post 1</a></li>
+      <li><a href="/posts/post-2/">Post 2</a></li>
+      <li><a href="/posts/post-3/">Post 3</a></li>
+    </ul>
+    
+  </body>
+</html>
