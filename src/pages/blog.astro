@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import '../styles/global.css';
 
+const allPosts = await Astro.glob('../pages/posts/*.md');
 const pageTitle = 'Blog | Alexandru Kovacs';
 const pageDescription = 'Mi blog de Astro aprendizaje';
 ---
